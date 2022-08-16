@@ -20,4 +20,4 @@ for tweet in sntwitter.TwitterSearchScraper(query).get_items():
 df = pd.DataFrame(tweets, columns=['Date', 'User', 'Tweet'])
 
 # saving dataframe on csv file
-df.to_csv('maytweets.csv', index=False, encoding='utf-8-sig')
+df.to_csv('tweets.csv', index=False, encoding='utf-8-sig')
